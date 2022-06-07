@@ -2,9 +2,10 @@
 This is a small repository with a customized Camunda 7 being deployed in Google Cloud. 
 
 # Prerequisites
-You require a Google Cloud account and have access to a Google Cloud Project: https://console.cloud.google.com/
+- Google Cloud account and have access to a Google Cloud Project: https://console.cloud.google.com/
+- gcloud CLI installed in your local workspace: https://cloud.google.com/sdk/docs/install
 
-I use VS Code.
+I use VS Code. There is Google extension available, but I do prefer command line of wizards.
 
 # Deploy Camunda 7 in Google Cloud Run
 In order to deploy this Camunda 7 you need the following command:
