@@ -3,7 +3,7 @@ This is a small repository with a customized Camunda 7 being deployed in cloud. 
 
 Included:
 - Camunda Run 7.17
-- History Plugin
+- [Community history plugin](https://github.com/datakurre/camunda-cockpit-plugins) by [datakurre](http://datakurre.pandala.org/)
 - Option to set admin password and admin username
 
 # Usage
