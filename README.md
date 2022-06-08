@@ -18,4 +18,4 @@ Check `configuration/default.yml` for configuration, esspecially setting up admi
 - `ADMIN_USERNAME`
 - `ADMIN_PASSWORD`
 
-*Security Advise*: Provide the password and username as Secret at GCP. It will be available as environment variable in Cloud Run.
+*Security Advise*: Provide the password and username as secret at GCP. It will be available as environment variable in Cloud Run.
