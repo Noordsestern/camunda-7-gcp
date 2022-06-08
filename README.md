@@ -28,4 +28,15 @@ In order to deploy this Camunda 7 you need the following command:
 
 In case gcloud is not connected to your local workspace, yet, it will prompt you the commands to do so.
 
+## Configure Camunda 7 environment
+When configuring the cloud run environment the following setting are sufficient for demo purposes:
+- 1 GB of memory
+- 2 CPU
+
+As long as you run on the internal H2 database, make sure your maximum number of instances is equal to 1. Otherwise Cloud Run will start several independent instances with each their own individual database. Like that, you process model would randomly end up in one instance, while your external task worker tries to acquire a topic from another instance unaware of the process.
+
+For cost efficiency, I would allow a minimum of 0, so the instance is automatically shutdown in idle time. As long as you do not have jobs (cleanup jobs, timer events etc.), this setting should save you some budget without messing with the automation experience.
+
+![Cloud Run configuration for Camunda 7](doc/img/cloud-run-config.png)
+
 
