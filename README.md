@@ -14,4 +14,8 @@ In order to deploy this Camunda 7 you need the following command:
 In case gcloud is not connected to your local workspace, yet, it will prompt you the commands to do so.
 
 # Usage
-Check `configuration/default.yml` for configuration, esspecially setting up admin password. By default admin user/password is `demo/demo` but you may override the properties.
+Check `configuration/default.yml` for configuration, esspecially setting up admin password. By default admin user/password is `demo/demo` but you may override the properties by providing environment variables:
+- `ADMIN_USERNAME`
+- `ADMIN_PASSWORD`
+
+*Security Advise*: Provide the password and username as Secret at GCP. It will be available as environment variable in Cloud Run.
